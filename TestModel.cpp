@@ -34,6 +34,7 @@ bool TestModel::insertRows(int row, int count, const QModelIndex &parent)
     qDebug()<<"insert: 3";
     endInsertRows();
     qDebug()<<"insert: 4";
+    return true;
 }
 
 bool TestModel::removeRows(int row, int count, const QModelIndex &parent)
@@ -45,6 +46,7 @@ bool TestModel::removeRows(int row, int count, const QModelIndex &parent)
     qDebug()<<"remove: 3";
     endRemoveRows();
     qDebug()<<"remove: 4";
+    return true;
 }
 
 void TestModel::addNew()
